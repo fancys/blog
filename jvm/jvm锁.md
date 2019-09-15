@@ -12,10 +12,6 @@
 
 
 
-#### http://www.avatech.com:8080/news/index.asp?name=5&page=1#name
-
-
-
 
 
 ### Lock
