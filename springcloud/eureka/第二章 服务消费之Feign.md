@@ -48,6 +48,7 @@
     SalesOrderOutput fetchSalesOrder();
  }
  ```
+ ***Mapping中的值为方法对应的Controller类的Mapping+方法的Mapping***
 
  对client模块进行`mvn clean install`,将client模块打包到本地仓库。
 
@@ -87,7 +88,9 @@
 + 服务提供者
     + 添加Fegin依赖。注意高版本的版本号，且版本号要与spring cloud的版本对应。
 
-    + 添加接口，声明服务。注意添加Feign注解
+    + 添加接口，添加Feign注解
+
+    + 声明服务方法，添加Mapping。注意Mapping的值与Controller中的Mapping值和方法的Mapping值
 
     + 打包项目
 
