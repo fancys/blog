@@ -1,4 +1,4 @@
-# spring cloud 集成Feign组件实现服务消费
+# 第二章 spring cloud 集成Feign组件实现服务消费（Greenwich.SR3版本）
 
  上一章我们通过Eureka实现了服务的注册与发现，这章我们将讲解如何通过Fegin去消费注册的服务。
 
@@ -65,6 +65,7 @@
  </dependency>
  ```
  在Application类加上注解`@EnableFeignClients(basePackages = "com.avatech.edi.salesorder.client")`
+
 
 2、调用salesorder服务
 

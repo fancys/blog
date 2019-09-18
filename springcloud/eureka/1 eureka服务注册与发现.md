@@ -1,4 +1,4 @@
-# spring cloud 集成eureka实现服务注册与发现
+# 第一章 spring cloud 集成eureka实现服务注册与发现（Greenwich.SR3版本）
 
 ## 组件
 
@@ -93,9 +93,23 @@ eureka:
 
 Application的名称可通过配置`spring.application.name`进行修改.
 
+## 相关配置
+1、服务相互注册配置
+
 现在，我们可以启动多个Server和Client端来保证服务的高可用了。
 
 ![](../../img/eureka示例注册.jpg)
+
+2、注册中心提示如下错误：
+``` message
+EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
+```
+此警告提示是由于Eureka默认启动了保护机制，Server在运行期间会统计心跳失败的比例，如果15分钟内低于85%会出现该提示。生产环境可能由于网络不稳定导致此情况出现，开发环境可通过关闭保护机制去除该警告提示。
+``` yml
+eureka:
+ server:
+  enable-self-preservation: false
+```
 
 
 
