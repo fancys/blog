@@ -18,5 +18,6 @@
 
 启动consul
 
+`./consul agent -dev -ui -bootstrap-expect=1 -data-dir=/tmp/consul -node=agent-dev -advertise=47.92.196.35 -bind=0.0.0.0 -client=0.0.0.0`
 
 ### macos
