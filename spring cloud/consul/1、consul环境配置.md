@@ -24,7 +24,7 @@
 
 #### docker 安装
 
-1、拉去consul镜像
+1、拉取consul镜像
 
 先执行`docker search consul`查看有哪些`consul`相关的镜像
 ![](../../img/consul相关镜像.jpg)

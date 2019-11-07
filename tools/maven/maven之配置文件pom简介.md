@@ -1,2 +1,13 @@
-# maven之配置文件pom简介
+# maven简介
+
+## maven定义及目标
+
+
+
+## POM
+
+### dependency
+
+
+
 
