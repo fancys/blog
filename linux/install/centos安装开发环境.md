@@ -28,7 +28,7 @@
 
 2、`./configure --prefix=/usr/local/git`
 
-3、`make profix=/usr/local/git`
+3、`make prefix=/usr/local/git`
 **编译过程如果报错，一般是缺少依赖包，使用yum安装相应包即可**
 
 配置环境变量
@@ -51,7 +51,8 @@
 重命名
 `mv apache-maven-3.6.2-bin.tar.gz maven3`
 
-
+配置环境变量
+`echo "export PATH=$PATH:/usr/local/maven3/bin" >> /etc/profile`
 
 ## 前端环境安装
 
