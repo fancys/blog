@@ -26,6 +26,10 @@ sudo gpasswd -a $USER docker
 2、`dos2unix shell脚本`
 3、执行shell脚本
 
+或
+
+用`vi`或`vim`进入脚本，在命令模式下输入`set staff`,查看当前脚本环境。
+
 
 
 
