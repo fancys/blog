@@ -36,6 +36,8 @@
 
 3. jinfo
 
+   jinfo pid
+
    
 
 4. jmap
