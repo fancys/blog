@@ -54,7 +54,7 @@
 
 5. jhat
 
-   
+   分析dump文件：jhat xxx.dump 
 
 6. Jstack
 
