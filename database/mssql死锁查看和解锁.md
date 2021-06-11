@@ -14,3 +14,4 @@ declare @sql varchar(1000)
 set @sql='kill '+cast(@spid  as varchar)
 exec(@sql)
 ```
+

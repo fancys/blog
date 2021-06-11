@@ -34,6 +34,9 @@ mvn deploy:deploy-file -DgroupId=xxx -DartifactId=xxx -Dversion=xxx -Dpackaging=
 + 示例
 ```mvn
  mvn deploy:deploy-file -DgroupId=com.sap.jco -DartifactId=sapwrapper -Dversion=9.2 -Dpackaging=jar -Dfile=C:\\Users\\Admin\\Desktop\\sbo\\9.2\\sbowrapper.jar -Durl=http://47.92.196.35:8081/repository/maven-third-party/ -DrepositoryId=edi.base
+ 
+  mvn deploy:deploy-file -DgroupId=com.avatech.dahupt -DartifactId=dahupt-common-core -Dversion=1.1.0-SNAPSHOT -Dpackaging=jar -Dfile=/Users/fanxing/Downloads/dahupt-common-core-1.1.0-SNAPSHOT.jar -Durl=http://rds.avatech.com.cn:8081/repository/maven-snapshots/ -DrepositoryId=nexus-snapshots
+
 ```
 ***注意：DrepositoryId参数的值与配置文件中的server下的id值保持一致***
 
