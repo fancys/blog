@@ -60,3 +60,17 @@ mvn deploy:deploy-file -DgroupId=xxx -DartifactId=xxx -Dversion=xxx -Dpackaging=
 ```maven
     mvn clean deploy
 ```
+
+
+
+### 3、错误处理
+
+1.  发布错误
+
+   ```
+   Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy-file (default-cli) on project standalone-pom: Failed to deploy artifacts: Could not transfer artifact com.wln:hopi:jar:1.0-RELEASES from/to nexus-releases (http://gogs.avatech.com.cn:8081/repository/maven-3rd/): Transfer failed for http://gogs.avatech.com.cn:8081/repository/maven-3rd/com/wln/hopi/1.0-RELEASES/hopi-1.0-RELEASES.jar 405 PUT -> [Help 1]
+   ```
+
+   检查`maven-3rd`的仓库类型和设置，是否支付发布
+
+   
